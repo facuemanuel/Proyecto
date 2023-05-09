@@ -166,6 +166,13 @@
             </div>
         </div>
       </div>
+      <!-- FOOTER-->
+
+      <div class="container text-center py-5">
+        <H1 id="titulo" class="display-3 py-5">Gracias por visitar nuestro sitio web</H1>
+        <button onclick="cambiar()" id="boton" class="btn btn-danger" > Haz Click</button>
+      </div>
+      
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
       <!--Bootstrap-->
@@ -173,6 +180,12 @@
       <!-- AOS JS -->
       <script>
           AOS.init();
+        </script>
+        <script>
+          function cambiar(){
+        document.getElementById("titulo").innerHTML = "Vuelva pronto!";
+        }
+
         </script>
   </body>
 </html>
