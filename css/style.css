@@ -1,0 +1,337 @@
+/*Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+:root {
+    /* Color Style */
+    --primary: #FBC257;
+    --primary-ligth: #FCCC73;
+    --dark-brown: #341413;
+    --gray-1:#798092;
+    --gray-2: #E6E6ED;
+    --white: #ffffff;
+
+    /*font size Desktop */
+    --header-1: 64px;
+    --header-2: 48px;
+    --header-3: 42px;
+    --header-4: 32px;
+
+    --text-medium: 18px;
+    --text-regular: 16px;
+    --text-light: 13px;
+
+    /*font weight */
+    --font-weight-regular:300;
+    --font-weight-bold: 700;
+    --font-weight-semi-bold: 600;
+    --font-weight-medium: 400;
+    --font-weight-light: 300;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'poppins' , sans-serif;
+}
+
+/* button primary */
+
+.btn{
+    padding: 15px 25px;
+    border-radius: 6px;
+    font-size: var(--text-medium);
+    font-weight: var(--font-weight-medium);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+}
+.btn-primary:focus {
+    background-color:var(--primary-ligth) ;
+}
+.btn-primary:hover {
+    background-color: var(--primary-ligth);
+}
+
+/*button secundary*/
+
+.btn-secundary {
+    background-color: var(--gray-2);
+    color: var(--gray-1);
+}
+
+.btn-secundary:focus {
+    background-color: var(--white);
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.0%);
+    color: var(--gray-1);
+
+}   
+
+.btn-secundary:hover {
+    background-color: var(--white);
+    box-shadow: 0px 4px 19px rgb(0,0,0.0% );
+    color: var(--gray-1);
+}
+
+/* NAVBAR */
+
+.navbar-brand img {
+    padding-right: 16px;
+    width: 100px;
+}
+.navbar-brand span {
+    font-size: var(--text-medium);
+    font-weight: var(--font-weight-medium);
+    color:var(--dark-brown)
+}
+.navbar {
+    padding: 48 px 0;
+}
+a.nav.link {
+    margin-right: 39px;
+    font-size:var(--text-regular);
+    font-weight: var(--font-regular);
+    color: var(--dark-brown) !important;
+}
+
+/* HERO */
+
+section.hero {
+    margin: 5rem 0;
+}
+
+.text-label,
+.text-hero-bold,
+.text-hero-regular {
+    margin: 24px 0;
+}
+
+.text-label {
+    color: var(--primary);
+    font-size: var(--font-weight-regular);
+    font-weight: var(--font-weight-regular) ;
+    line-height: 31px;
+}
+
+.text-hero-bold {
+    color: var(--dark-brown);
+    font-size: var(--header-1);
+    font-weight: var(--font-weight-bold);
+    line-height: 74px;
+}
+
+.text-hero-regular {
+    color: var(--gray-1);
+    font-size: var(--text-regular);
+    font-weight: var(--font-weight-regular);
+    line-height: 31px;
+}
+/*TESTIMONIO*/
+
+.testimonio-brand {
+    padding: 24px 0;
+}
+.mili {
+    width: 100px;
+}
+/* about */
+#about img {
+    width: 400px;
+    border-radius: 15px;
+
+}
+#about{
+    padding: 100px 0;
+    color: var(--dark-brown);
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1 {
+    flex-basis: 35%;
+}
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* Curriculum */
+#curriculum {
+    padding: 30px 0;
+}
+.curriculum-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.curriculum-list div {
+    background-color: #2d3e66;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.curriculum-list div p {
+    color: #E6E6ED;
+}
+.curriculum-list div i {
+    color: var(--primary-ligth);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.curriculum-list div h2 {
+    color: #FBC257;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.curriculum-list div a {
+    text-decoration: none;
+    color: #FBC257;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.curriculum-list div:hover {
+    background: #9045B4;
+    transform: translateY(-10px);
+}
+/* Contacto */
+
+.contact-left {
+    flex-basis: 35%;
+}
+.contact-right {
+    flex-basis: 60%;
+}
+.contact-left p {
+    margin-top: 30px;
+}
+.contact-left p i {
+    color: #341413;
+    font-size: 25px;
+    margin-right: 15px;
+}
+.social-icons {
+    margin-top: 30px;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: var(--gray-1);
+    display: inline-block;
+}
+.social-icons a:hover {
+    color: #341413;
+    transform: translateY(-5px);
+}
+.btn.btn2 {
+    display:inline-block;
+    background:#FBC257;
+}
+.contact-right form {
+    width: 100%;
+}
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: grey;
+    padding: 15px;
+    margin: 15px 0;
+    color:#fffeff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px ;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+/* Desktop */
+@media (min-width: 1399.98px) {
+    .container {
+        width: 84%;
+    }
+    .testimonio-brand {
+    padding: 4rem 5rem;
+    }
+
+}
+
+/* MOBILE RESPOSIVE */
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 28px 0;
+    }
+
+    a.nav-link {
+        margin-right: 7px 0;
+    }
+
+    /* hero */
+    
+    section.hero {
+        margin: 2rem 0;
+        text-align: center;
+    }
+    section.hero img {
+        width: 200px;
+    }
+    .navbar-brand img {
+        width: 60px;
+    }
+    .btn {
+        display: block;
+        margin: 1rem 0;
+    }
+    .ms-3 {
+        margin-left: 0 !important;
+    }
+    .text-label,
+    .text-hero-bold,
+    .text-hero-regular {
+        text-align: center;
+    }
+
+    .text-hero-bold {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--header-3);
+        line-height: 64px;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+    .about-col-2 {
+        font-size: 14px;
+    }
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+
+    }
+}
+
+    
+
+
